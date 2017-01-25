@@ -1,0 +1,11 @@
+<div class="row" *ngIf="!listing"> <!-- ng-if="!search.listing.Page" -->
+  <div class="col-md-12">
+    <h3 class="text-center">Locating, please wait...</h3>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12" *ngIf="listing">
+    <h4>[results length here] Rentals Found in <b>[ region name here ]</b></h4>
+  </div>
+  <app-listing [Item]="item" *ngFor="let item of listing" class="col-md-6"></app-listing>
+</div>

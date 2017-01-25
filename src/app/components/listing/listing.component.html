@@ -1,0 +1,10 @@
+<article>
+  <div class="image" [ngStyle]="{'background-image': 'url(' + Item.PictureHref + ')'}"></div>
+  <div class="info">
+    <div class="price">${{ Item.RentPerWeek }}</div>
+    <div class="spacer">*</div>
+    <div>{{ Item.Suburb }}, {{ Item.Bedrooms }} bedrooms</div>
+    <div class="spacer">*</div>
+    <div class="avaible-from">Available {{ Item.AvailableFrom }}</div>
+  </div>
+</article>

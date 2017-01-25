@@ -1,3 +1,34 @@
-<p>
-  search works!
-</p>
+<!-- START BODY -->
+<div class="content-wrapper">
+  <div id="search" class="container-fluid">
+    <div class="row">
+      <div id="left-nav" class="col-md-7" auto-height>
+        <div class="row">
+
+          <!-- START FILTERS -->
+          <section id="filters" class="col-md-12">
+            <!--<ng-include src="'app/views/search/filters.include.html'"></ng-include>-->
+          </section>
+
+          <!-- START RESULTS -->
+          <section id="results" class="col-md-12">
+            <!--<ng-include src="'app/views/search/results.include.html'"></ng-include>-->
+            <app-results [listing]="listing?.List"></app-results>
+          </section>
+
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="row">
+
+          <!-- Start - Map Section -->
+          <section id="map">
+            <!--<ng-include src="'app/views/search/map.include.html'"></ng-include>-->
+            <app-map></app-map>
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
