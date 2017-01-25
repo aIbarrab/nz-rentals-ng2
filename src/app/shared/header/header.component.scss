@@ -1,0 +1,52 @@
+@import "../../../../node_modules/bootstrap/scss/bootstrap"; // this shouldn't be here
+
+header{
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  background-color: #FFF;
+  border-bottom: 1px solid #dce0e0;
+  box-shadow: 0 0 8px 0 rgba(0,0,0,0.35);
+
+  a{
+    text-decoration: none;
+  }
+
+  .logo{
+    float: left;
+    font-size: 30px;
+    padding: 8px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .search{
+    #sizing-addon1{
+      border: 0;
+      background: transparent;
+      border-left: 1px solid;
+      color: #FFF;
+      @include border-bottom-radius(0);
+      @include border-left-radius(0);
+      @include border-top-radius(0);
+      @include border-right-radius(0);
+    }
+    input[type="text"]{
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+    }
+  }
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li{
+      float: left;
+      width: 100px;
+      text-align: center;
+    }
+  }
+}

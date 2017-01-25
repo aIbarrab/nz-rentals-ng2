@@ -1,0 +1,18 @@
+<header class="container-fluid">
+  <div class="row">
+    <div class="col-md-8">
+      <a routerLink="/" class="logo">
+        <span class="fa fa-ship" aria-hidden="true"></span>
+        {{title}}
+      </a>
+      <form *ngIf="showHeader">
+        <div class="input-group input-group-lg search">
+          <span class="input-group-addon" id="sizing-addon1">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+          </span>
+          <input type="text" class="form-control" placeholder="Search" aria-describedby="sizing-addon1">
+        </div>
+      </form>
+    </div>
+  </div>
+</header>
