@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+$max-width-content:1200px;
+$main-color: #00FF00;
+$error-color: #F51313;
+$hover-menu:rgba(0,0,0,0.2);
+$bg-color: #F7F7F9;
+
+
+body{
+  color: #484848;
+  background: $bg-color;
+}
+
+label{
+  font-size: 14px;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}

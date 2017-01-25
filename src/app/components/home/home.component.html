@@ -21,7 +21,9 @@
     <div class="col-md-12">
       <p class="text-center">Or pick from one of the places listed below:</p>
       <ul>
-        <li *ngFor="let locality of locations">{{locality.Name}}</li>
+        <li *ngFor="let locality of locations">
+          <a routerLink="search">{{locality.Name}}</a>
+        </li>
       </ul>
     </div>
   </div>

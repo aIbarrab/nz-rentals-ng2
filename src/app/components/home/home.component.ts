@@ -1,6 +1,6 @@
 import { Component, OnInit }  from '@angular/core';
-import { LocationsService }   from '../services/locations.service';
-import { Locations }          from '../interfaces/locations';
+import { LocationsService }   from '../../services/locations.service';
+import { Locations }          from '../../interfaces/locations';
 
 @Component({
   selector: 'app-home-component',

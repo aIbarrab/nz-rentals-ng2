@@ -6,7 +6,9 @@ import { HttpModule }       from '@angular/http';
 import { AppComponent }     from './app.component';
 
 import { AppRoutingModule } from './app-routing.module';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent }    from './components/home/home.component';
+import { SearchComponent }  from './components/search/search.component';
+import { HeaderComponent }  from './shared/header/header.component';
 
 @NgModule({
   imports: [
@@ -15,7 +17,7 @@ import { HomeComponent } from './home/home.component';
     HttpModule,
     AppRoutingModule
   ],
-  declarations: [ AppComponent, HomeComponent ],
+  declarations: [ AppComponent, HomeComponent, SearchComponent, HeaderComponent ],
   providers: [],
   bootstrap: [ AppComponent ]
 })
