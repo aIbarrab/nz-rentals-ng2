@@ -12,6 +12,7 @@ import { HeaderComponent }  from './shared/header/header.component';
 import { ResultsComponent } from './components/search/results/results.component';
 import { MapComponent } from './components/search/map/map.component';
 import { ListingComponent } from './components/listing/listing.component';
+import { AutoHeightDirective } from './directives/auto-height.directive';
 
 @NgModule({
   imports: [
@@ -20,7 +21,7 @@ import { ListingComponent } from './components/listing/listing.component';
     HttpModule,
     AppRoutingModule
   ],
-  declarations: [ AppComponent, HomeComponent, SearchComponent, HeaderComponent, ResultsComponent, MapComponent, ListingComponent ],
+  declarations: [ AppComponent, HomeComponent, SearchComponent, HeaderComponent, ResultsComponent, MapComponent, ListingComponent, AutoHeightDirective ],
   providers: [],
   bootstrap: [ AppComponent ]
 })
