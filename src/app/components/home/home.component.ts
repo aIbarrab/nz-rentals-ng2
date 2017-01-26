@@ -11,6 +11,8 @@ import { Locations }          from '../../interfaces/locations';
 export class HomeComponent implements OnInit {
 
   locations: Locations[];
+  lat: number = 51.678418;
+  lng: number = 7.809007;
 
   constructor( private locationsService: LocationsService ) {
     this.locationsService.getLocations().subscribe(locations => {

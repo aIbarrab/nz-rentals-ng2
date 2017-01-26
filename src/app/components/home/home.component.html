@@ -22,7 +22,7 @@
       <p class="text-center">Or pick from one of the places listed below:</p>
       <ul>
         <li *ngFor="let locality of locations">
-          <a routerLink="search">{{locality.Name}}</a>
+          <a [routerLink]="['search', locality.Name, locality.LocalityId]">{{locality.Name}}</a>
         </li>
       </ul>
     </div>

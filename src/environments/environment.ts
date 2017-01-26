@@ -7,5 +7,6 @@ export const environment = {
   production: false,
   oauth_consumer_key: 'C1C8966966ED4CBEB30737C2D29A9682',
   oauth_signature: '3F9B5F5F81AEAD48E4D183EA45A3CA87&',
-  oauth_signature_method: 'PLAINTEXT'
+  oauth_signature_method: 'PLAINTEXT',
+  maps_api_key: 'AIzaSyDY25QTDec0eO1PeMcVjekKUESWXVO0kAg'
 };

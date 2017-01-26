@@ -9,12 +9,11 @@ import { Listing } from '../../../interfaces/listing';
 export class ResultsComponent implements OnInit {
 
   @Input() listing: Listing;
+  @Input() regionName: string;
+  @Input() totalCount: string;
 
-  constructor() {
-    console.log(this.listing);
-  }
+  constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }
